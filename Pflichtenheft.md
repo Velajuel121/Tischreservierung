@@ -16,19 +16,19 @@ Mitwirkende            |     Alen Adzamija,Pero Djukic
 
 Inhalt
 ------
-1)Ausgangssituation
+1) Ausgangssituation
 
-2)Ist Zustand
+2) Ist Zustand
 
-3)Zielsetzung
+3) Zielsetzung
 
-4)Projektendergenis
+4) Projektendergenis
 
-5)Funktionale Anforderung
+5) Funktionale Anforderung
 
-6)Nicht funktionale Anforderung
+6) Nicht funktionale Anforderung
 
-7)Riskoakzeptanz
+7) Riskoakzeptanz
 
-1)Ausgangssituation
+1) Ausgangssituation
 ---------------------
