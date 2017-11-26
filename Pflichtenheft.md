@@ -55,11 +55,15 @@ Use Case Diagramm:
 
 6)Nicht-funktionale Anforderungen
 --------------------------
-Usability: Benutzerfreundlich aufgrund einfacher Webapplikation
-Performance: minimale Ladezeiten
-Portabilität: Kompatibel mit allen Browsern
-Wertbarkeit: das Programm kann in Zukunft erweitert werden indem man eine Desktop app erstellt
-Korrektheit: Die Tischreservierung kann ohne Probleme benützt werden
+**Usability**: Benutzerfreundlich aufgrund einfacher Webapplikation
+
+**Performance**: minimale Ladezeiten
+
+**Portabilität**: Kompatibel mit allen Browsern
+
+**Wertbarkeit**: das Programm kann in Zukunft erweitert werden indem man eine Desktop app erstellt
+
+**Korrektheit**: Die Tischreservierung kann ohne Probleme benützt werden
 
 7)Risikoakzeptanz
 --------------------------
