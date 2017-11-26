@@ -54,6 +54,7 @@ Use Case Diagramm:
 ![alt text](https://raw.githubusercontent.com/Velajuel121/Tischreservierung/master/UseCase.PNG)
 
 6)Nicht-funktionale Anforderungen
+--------------------------
 Usability: Benutzerfreundlich aufgrund einfacher Webapplikation
 Performance: minimale Ladezeiten
 Portabilität: Kompatibel mit allen Browsern
