@@ -1,21 +1,21 @@
-Pflichtenheft
+#Pflichtenheft
 -------------
 
-Projektbezeichnung     |     Tischreservierung
+|Projektbezeichnung     |     Tischreservierung|
 
-Projektleiter          |     Felix Kronsteiner
+|Projektleiter          |     Felix Kronsteiner|
 
-Erstellt am            |     25.11.17
+|Erstellt am            |     25.11.17         |
 
-Letzte Änderung        |     26.11.17
+|Letzte Änderung        |     26.11.17         |
 
-Zustand                |     In Arbeit
+|Zustand                |     In Arbeit        |
 
-Mitwirkende            |     Alen Adzamija
-                            Pero Djukic
+|Mitwirkende            |     Alen Adzamija    |
+|                              Pero Djukic     |
 
 
-Inhalt
+##Inhalt
 ------
 1)Ausgangssituation
 
@@ -31,5 +31,5 @@ Inhalt
 
 7)Riskoakzeptanz
 
-1)Ausgangssituation
+###1)Ausgangssituation
 ---------------------
