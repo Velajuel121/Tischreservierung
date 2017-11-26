@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d38bb1c4-773b-428b-b229-dc97ee75416a" name="Tischreservierung" linkedPackageId="172560ca-d7e5-41b7-97db-36cb3000268c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="2558bcdb-0bf3-43dc-b255-7079076177f3">
+      <profileInstance Id="c2d9d1a3-81ef-401b-80e7-6e6e96e464c6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c25746d0-eac5-4549-8e0d-2ca0f55bce8c">
+      <profileInstance Id="3ebe2194-d0c9-4562-86e8-6400ec79b652" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ff671f1b-0b06-49f3-b5ce-d274a037ec42" name="Kunde" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="96ba5467-a8d7-4abb-875a-d105d78aa568" />
+        <targetEnds>
+          <association Id="1d8959f3-1f5a-4f8e-9767-682d5d442279" isDerived="false" sourceEndRoleName="Kunde" targetEndRoleName="einloggen" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ec217e0c-d905-47e8-9568-05f2b4db064b" LastKnownName="einloggen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e215a8a-4859-4cf0-9bc2-3c2f463d62ae" name="Kunde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d0786a98-dcb2-4529-a1d1-89b24ee226a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7874ce22-74b5-4e39-a639-b27b003b319d" name="einloggen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7110e57c-2372-411f-a2d0-281ba905a06e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="12883de6-6860-417a-9c98-b0f8d9a96b2c" />
+          </association>
+          <association Id="7624614f-2ef9-4f9a-96b6-27f424af41f9" isDerived="false" sourceEndRoleName="Kunde" targetEndRoleName="registrieren" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0c09753e-c897-420d-8ac2-ac9fcd482411" LastKnownName="registrieren" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5c14d045-3d04-46ea-b774-06c99607fb69" name="Kunde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="06320dc8-1d2a-4de1-8d43-c3a02b487a05" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a26ecbb-a478-4610-bb8f-c128f804e49d" name="registrieren" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="67b516b1-e806-4ca1-8161-b0c4d8c37f1e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="85300352-ac14-4376-a1a7-de84a8306fb1" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c0568d96-6c8d-4dd8-b343-643682ac1ddb" name="Restaurant" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="929f6089-b052-45af-bb64-4d8a48f62667" />
+        <targetEnds>
+          <association Id="cfa7770b-5715-41d5-b522-290bad008131" isDerived="false" sourceEndRoleName="Restaurant" targetEndRoleName="Restaurant login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b64ccf32-3d2b-464e-b51a-6df9c9c50999" LastKnownName="Restaurant login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b17d8096-531b-4db1-bc49-c5f1b97bd83e" name="Restaurant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="65c22d45-8659-4497-b675-0fbb1f7b7286" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="18b683bc-79e4-49b2-9796-6ed0b661cda9" name="Restaurant login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9231ee85-b525-404f-92f6-5b3b2375b9a5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c51b27b3-7909-4954-938b-161055bf8a18" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b893464f-0305-4d5b-bb2e-e24903c2b07c" name="Plätze reservieren" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="423282d8-6125-40e9-bdf7-460471b05961" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="88b624b5-48a1-4c63-acb9-c90c45710331" name="vorhandene Reservierungen einsehen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aa6ae177-7525-40ba-9215-8bb79e1d372c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ec217e0c-d905-47e8-9568-05f2b4db064b" name="einloggen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2514cd26-e139-4f1d-bf8c-70f3e21143dd" />
+        <targetEnds>
+          <association Id="858cb052-fe2f-4b78-b7f9-f88cde64601a" isDerived="false" sourceEndRoleName="einloggen" targetEndRoleName="vorhandene Reservierungen einsehen" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="88b624b5-48a1-4c63-acb9-c90c45710331" LastKnownName="vorhandene Reservierungen einsehen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01f83d41-2931-43db-b0f0-5f84b9637e71" name="einloggen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6c6efb09-b8cb-4838-a995-486cca3485be" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9c6eb43c-a1e6-4262-b7ed-a03ec78e9b5f" name="vorhandene Reservierungen einsehen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2a8e0e14-b02d-4996-811c-1a76cefe7a52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ce891ca0-e534-4618-b196-4f41d92bb430" />
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend Id="0e074bb1-a1cf-4f61-a5aa-1f0e98f44da9">
+            <useCaseMoniker Id="b893464f-0305-4d5b-bb2e-e24903c2b07c" LastKnownName="Plätze reservieren" />
+            <elementDefinition Id="25b8d362-0292-480a-9b43-3b3cf95f4b9d" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0c09753e-c897-420d-8ac2-ac9fcd482411" name="registrieren" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="24e201b7-4a54-44a7-8dc0-b8b916c5c3b4" />
+        <targetEnds>
+          <association Id="f8c6cbe4-3104-4bd0-80ad-5d83465f5d2a" isDerived="false" sourceEndRoleName="registrieren" targetEndRoleName="einloggen" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ec217e0c-d905-47e8-9568-05f2b4db064b" LastKnownName="einloggen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5b8cb764-f09b-494f-afb4-88dd4bae5e62" name="registrieren" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bd269254-b546-43bc-a477-895e7347a73d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="98d47c4a-67fd-4c76-adbf-b95b96d40af7" name="einloggen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="49cdf1bb-8f15-478b-8a80-f3f17810d354" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="670d9c5b-15fc-477b-b0ca-9f53f8e593b5" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b64ccf32-3d2b-464e-b51a-6df9c9c50999" name="Restaurant login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d59b1c15-db23-4b48-b262-da8250650ffa" />
+        <targetEnds>
+          <association Id="9d35f484-70f4-47e6-a4c5-adc300496688" isDerived="false" sourceEndRoleName="Restaurant login" targetEndRoleName="vorhandene Reservierungen einsehen" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="88b624b5-48a1-4c63-acb9-c90c45710331" LastKnownName="vorhandene Reservierungen einsehen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="342feeca-5801-47fa-9fb6-b240e5ee84c8" name="Restaurant login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="30c4af6c-c83d-459e-ae0b-ed64332a2bfc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ddbafe1-dea8-4355-8a86-9bbc8afd15fc" name="vorhandene Reservierungen einsehen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d4df5eed-d1c0-4f0e-86b0-0872f89a2ef7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c4ec4c39-84f0-4b5c-ab03-dadb5f4160dc" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="172560ca-d7e5-41b7-97db-36cb3000268c" name="TischreservierungUseCase">
+    <elementDefinition Id="fe49d1ef-37ce-41ee-ad81-1672caa8f2f1" />
+  </package>
+</useCaseModelRoot>
