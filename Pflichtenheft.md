@@ -12,7 +12,7 @@ Letzte Änderung        |     26.11.17
 Zustand                |     In Arbeit        
 
 Mitwirkende            |     Alen Adzamija    
-                       |       Pero Djukic      
+                             Pero Djukic      
 
 
 Inhalt
