@@ -12,11 +12,11 @@ Mitwirkende                 Alen Adzamija
 
 
 Inhalt
-1)
-2)
-3)
-4)
-5)
-6)
-7)
+1)AusgangssituatioN
+2)Ist Zustand
+3)Zielsetzung
+4)Projektendergenis
+5)Funktionale Anforderung
+6)Nicht funktionale Anforderung
+7)Riskoakzeptanz
 
