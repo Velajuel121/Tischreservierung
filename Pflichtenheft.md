@@ -46,7 +46,7 @@ Das Ziel des Projekts ist es, für Restaurants ein komfortables System zu entwic
 
 4)Projektendergebnis
 --------------------------
-Am Ende soll das Projekt in der Lage sein die Tische online zu reservieren und für die Restaurants eine einfachere Anzeige für die Reservierungen sein.
+Am Ende soll der User in der Lage sein die Tische online zu reservieren. Den Restaurants soll eine einfachere Anzeige für die Reservierung gegeben werden.
 
 5)Funktionale Anforderung
 --------------------------
