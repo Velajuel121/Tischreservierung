@@ -38,7 +38,7 @@ Inhalt
 
 2)Ist Zustand
 ---------------------
-Derzeit reserviert man in einem Restaurant einfach per Anruf aber dazu benötigt man die telefonnr wodurch man sowieso wieder in das Internet muss.
+Derzeit reserviert man in einem Restaurant einfach per Anruf aber dazu benötigt man die Telefonnr wodurch man sowieso wieder in das Internet muss und außerdem werden die Reservierung per Buch bei einigen noch durgeführt und mit unserer Software kann man auch die Reservierungen online einsehen.
 
 3)Zielsetzung
 ---------------------
