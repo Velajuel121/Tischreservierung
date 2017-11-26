@@ -28,8 +28,6 @@ Inhalt
 
 6) Nicht funktionale Anforderung
 
-7) Riskoakzeptanz
-
 
 1)Ausgangssituation
 ---------------------
@@ -40,7 +38,7 @@ Inhalt
 
 2)Ist Zustand
 ---------------------
-
+Derzeit reserviert man in einem Restaurant einfach per Anruf aber dazu benötigt man die telefonnr wodurch man sowieso wieder in das Internet muss.
 
 3)Zielsetzung
 ---------------------
