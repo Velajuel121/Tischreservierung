@@ -30,6 +30,7 @@ Inhalt
 
 7) Riskoakzeptanz
 
+
 1) Ausgangssituation
 ---------------------
   Dieses Projekt umfasst die Entwicklung einer Verwaltungssoftware für Platzreservierungen
