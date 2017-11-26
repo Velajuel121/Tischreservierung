@@ -1,6 +1,5 @@
-
-                  Pflichtenheft
------------------------------------------------
+Pflichtenheft
+-------------
 
 Projektbezeichnung     |     Tischreservierung
 
