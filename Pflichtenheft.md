@@ -22,7 +22,7 @@ Inhalt
 
 3) Zielsetzung
 
-4) Projektendergenis
+4) Projektendergebnis
 
 5) Funktionale Anforderung
 
@@ -42,4 +42,7 @@ Derzeit reserviert man in einem Restaurant einfach per Anruf aber dazu benötigt
 
 3)Zielsetzung
 ---------------------
+Das Ziel des Projekts ist es, für Restaurants ein komfortables System zu entwickeln das eine einfachere Tischreservierung ermöglicht.
 
+4)Projektendergebnis
+---------------------
