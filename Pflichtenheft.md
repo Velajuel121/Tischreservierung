@@ -5,7 +5,7 @@ Projektbezeichnung     |     Tischreservierung
 
 Projektleiter          |     Felix Kronsteiner
 
-Erstellt am            |     25.11.17         
+Erstellt am            |     19.11.17         
 
 Letzte Änderung        |     26.11.17         
 
@@ -17,7 +17,7 @@ Mitwirkende            |     Alen Adzamija,Pero Djukic
 Inhalt
 ------
 1) Ausgangssituation
-
+  
 2) Ist Zustand
 
 3) Zielsetzung
@@ -32,3 +32,15 @@ Inhalt
 
 1) Ausgangssituation
 ---------------------
+  Dieses Projekt umfasst die Entwicklung einer Verwaltungssoftware für Platzreservierungen
+  eines Gastronomiebetriebs oder einer Veranstaltung. 
+  Die Software soll die Möglichkeit bieten, eine Webschnittstellte einzubinden,
+  sodass die Gäste online selbst ihren Tisch reservieren können. 
+
+2)Ist Zustand
+---------------------
+
+
+3)Zielsetzung
+---------------------
+
