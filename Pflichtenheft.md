@@ -50,7 +50,7 @@ Am Ende soll der User in der Lage sein die Tische online zu reservieren. Den Res
 
 5)Funktionale Anforderung
 --------------------------
-Das Programm soll den Benutzer ermöglichen, mit dem Browser Tische auswählen und diese reservieren. Der User und das Restaurant können auch auf ihre Reservierungen anzeigen lassen.
+Das Programm soll den Benutzer ermöglichen, mit dem Browser Tische auszuwählen und diese zu reservieren. Der User und das Restaurant können auch ihre Reservierungen anzeigen lassen.
 
 Use Case Diagramm:
 ![alt text](https://raw.githubusercontent.com/Velajuel121/Tischreservierung/master/UseCase.PNG)
