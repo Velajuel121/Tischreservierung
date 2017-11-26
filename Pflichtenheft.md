@@ -1,5 +1,5 @@
-#Pflichtenheft
--------------
+Pflichtenheft
+=============
 
 |Projektbezeichnung     |     Tischreservierung|
 
@@ -15,7 +15,7 @@
 |                              Pero Djukic     |
 
 
-##Inhalt
+Inhalt
 ------
 1)Ausgangssituation
 
@@ -31,5 +31,5 @@
 
 7)Riskoakzeptanz
 
-###1)Ausgangssituation
+1)Ausgangssituation
 ---------------------
