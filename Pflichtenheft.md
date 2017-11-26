@@ -50,3 +50,8 @@ Am Ende soll der User in der Lage sein die Tische online zu reservieren. Den Res
 
 5)Funktionale Anforderung
 --------------------------
+
+7)Risikoakzeptanz
+--------------------------
+Im Falle eines Scheitern des Projekts, würde das Projektteam ein „Nicht
+Genügend“ auf das Projekt im Gegenstand SYP erhalten.
