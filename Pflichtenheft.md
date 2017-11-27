@@ -66,8 +66,3 @@ Use Case Diagramm:
 **Wertbarkeit**: das Programm kann in Zukunft erweitert werden indem man eine Desktop app erstellt
 
 **Korrektheit**: Die Tischreservierung kann ohne Probleme benützt werden
-
-7)Risikoakzeptanz
---------------------------
-Im Falle eines Scheitern des Projekts, würde das Projektteam ein „Nicht
-Genügend“ auf das Projekt im Gegenstand SYP erhalten.
