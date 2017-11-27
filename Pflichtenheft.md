@@ -53,7 +53,8 @@ Am Ende soll der User in der Lage sein die Tische online zu reservieren. Den Res
 Das Programm soll den Benutzer ermöglichen, mit dem Browser Tische auszuwählen und diese zu reservieren. Der User und das Restaurant können auch ihre Reservierungen anzeigen lassen.
 
 Use Case Diagramm:
-![alt text](https://raw.githubusercontent.com/Velajuel121/Tischreservierung/master/TischreservierungUseCase/UseCase.PNG)
+
+![alt text](https://raw.githubusercontent.com/Velajuel121/Tischreservierung/Alen/TischreservierungUseCase/UseCase.PNG)
 
 6)Nicht-funktionale Anforderungen
 --------------------------
