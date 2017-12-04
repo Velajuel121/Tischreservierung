@@ -7,7 +7,7 @@ Projektleiter          |     Felix Kronsteiner
 
 Erstellt am            |     19.11.17         
 
-Letzte Änderung        |     26.11.17         
+Letzte Änderung        |     01.12.17         
 
 Zustand                |     In Arbeit        
 
@@ -34,12 +34,16 @@ Inhalt
   Dieses Projekt umfasst die Entwicklung einer Verwaltungssoftware für Platzreservierungen
   eines Gastronomiebetriebs oder einer Veranstaltung. 
   Die Software soll die Möglichkeit bieten, eine Webschnittstellte einzubinden,
-  sodass die Gäste online selbst ihren Tisch reservieren können. 
+  sodass die Gäste online selbst ihren Tisch reservieren können und der Betrieb kann auch die Reservierungen einsehen.
 
 2)Ist Zustand
 --------------------------
-Derzeit reserviert man in einem Restaurant einfach per Anruf aber dazu benötigt man die Telefonnr wodurch man sowieso wieder in das Internet muss und außerdem werden die Reservierung per Buch bei einigen noch durgeführt und mit unserer Software kann man auch die Reservierungen online einsehen.
-
+ Nach der Ist Zustandserhebung haben wir festgestellt das der Betrieb gar keine Online-Schnitstelle zum Reservieren.
+ 
+2.1)Problemstellung
+--------------------------
+ Durch den nicht Gebrauch von Online-Möglichkeiten verliert der Betrieb Kundschaft/bzw. Geld. Dadurch wird auch neue Kundschaft nicht gewonnen.
+ 
 3)Zielsetzung
 --------------------------
 Das Ziel des Projekts ist es, für Restaurants ein komfortables System zu entwickeln das eine einfachere Tischreservierung ermöglicht.
