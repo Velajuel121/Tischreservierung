@@ -19,6 +19,8 @@ Inhalt
 1) Ausgangssituation
   
 2) Ist Zustand
+    
+    2.1) Problemstellung
 
 3) Zielsetzung
 
