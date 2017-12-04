@@ -38,8 +38,12 @@ Inhalt
 
 2)Ist Zustand
 --------------------------
- Nach der Ist Zustandserhebung
-
+ Nach der Ist Zustandserhebung haben wir festgestellt das der Betrieb gar keine Online-Schnitstelle zum Reservieren.
+ 
+2.1)Problemstellung
+--------------------------
+ Durch den nicht Gebrauch von Online-Möglichkeiten verliert der Betrieb Kundschaft/bzw. Geld. Dadurch wird auch neue Kundschaft nicht gewonnen.
+ 
 3)Zielsetzung
 --------------------------
 Das Ziel des Projekts ist es, für Restaurants ein komfortables System zu entwickeln das eine einfachere Tischreservierung ermöglicht.
