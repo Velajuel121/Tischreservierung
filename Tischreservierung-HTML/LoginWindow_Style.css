@@ -1,0 +1,33 @@
+header{
+    padding: 1em;
+    color: white;
+    background-color: #8a4c1b;
+    clear: left;
+    text-align: center;
+    font-size: 30px;
+   
+    margin-left: 750px;
+    margin-right: 750px;
+    margin-top: 175px;
+	font-family: "Times New Roman", Times, serif;
+}
+article{
+	padding: 1em;
+    clear: left;
+    text-align: center;
+    font-size: 30px;
+   
+    margin-left: 750px;
+    margin-right: 750px;
+    margin-top: 25px;
+	border-color: #8a4c1b;
+	border-style: solid;
+	font-family: "Times New Roman", Times, serif;
+}
+body {
+    background-image: url("Login_Background.jpg");
+}
+label{
+	font-family: serif;
+}
+
