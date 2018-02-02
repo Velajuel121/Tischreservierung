@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d38bb1c4-773b-428b-b229-dc97ee75416a" name="Tischreservierung" linkedPackageId="172560ca-d7e5-41b7-97db-36cb3000268c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ff671f1b-0b06-49f3-b5ce-d274a037ec42" name="Kunde" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="96ba5467-a8d7-4abb-875a-d105d78aa568" />
+        <targetEnds>
+          <association Id="49fe36a6-c50f-46b1-a884-fa99f039366c" isDerived="false" sourceEndRoleName="Kunde" targetEndRoleName="Plätze reservieren" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b893464f-0305-4d5b-bb2e-e24903c2b07c" LastKnownName="Plätze reservieren" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3df9f683-9eeb-424e-8153-9977e1726b71" name="Kunde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="caf50fa0-7980-412a-9c5c-42cd194ab0ad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a4de5828-81b4-4e23-87cc-a79bb5413d36" name="Plätze reservieren" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="441fc731-1a6f-45d0-aa9f-a76d2b338682" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9bc2f11d-de66-435e-9c59-30751b25692e" />
+          </association>
+          <association Id="552cdcbb-12b9-4608-bac5-91fb8ce25abe" isDerived="false" sourceEndRoleName="Kunde" targetEndRoleName="vorhandene Reservierungen einsehen" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="88b624b5-48a1-4c63-acb9-c90c45710331" LastKnownName="vorhandene Reservierungen einsehen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8a40f726-89d0-4b4a-9454-8d8e19be678d" name="Kunde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bf2ee890-7024-4187-b3fb-f57792a962b3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3a8ecb8b-6e4c-4e76-8b57-7f9df34250e8" name="vorhandene Reservierungen einsehen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3544afa5-28b2-43a8-8f28-cbe4811a762e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0e5b40b5-ba6d-4fc4-80fc-dc9422b52896" />
+          </association>
+          <association Id="aec8d948-7229-442b-b66d-ab6f7b44f27c" isDerived="false" sourceEndRoleName="Kunde" targetEndRoleName="Reservierung Strornieren oder umändern" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1a68d6bf-37f5-4cba-847f-ae193e84e07d" LastKnownName="Reservierung Strornieren oder umändern" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7d59b4f2-45c9-4bf7-8e46-4278043fd7f7" name="Kunde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="078cf479-ab30-4295-8c7a-2f528894e729" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="49497f74-8121-41e9-a570-e9c1fcfc5324" name="Reservierung Strornieren oder umändern" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bb04e336-b237-4adb-92d4-7c011f05370e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ddd7964e-7961-4eb1-af1f-293cb596198d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c0568d96-6c8d-4dd8-b343-643682ac1ddb" name="Restaurant" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="929f6089-b052-45af-bb64-4d8a48f62667" />
+        <targetEnds>
+          <association Id="77e753c6-95e9-4ad6-8f66-12ae45862cbd" isDerived="false" sourceEndRoleName="Restaurant" targetEndRoleName="vorhandene Reservierungen einsehen" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="88b624b5-48a1-4c63-acb9-c90c45710331" LastKnownName="vorhandene Reservierungen einsehen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4b251695-816c-46ec-8f0b-65d78d500345" name="Restaurant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9a39820d-71ce-4d68-a05d-d70ba64c89ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4b357820-d825-479d-8640-803bd6b19021" name="vorhandene Reservierungen einsehen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="72185895-5989-4975-a968-78539cad51d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="68752be6-4f46-4800-aa55-feaee97faa50" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b893464f-0305-4d5b-bb2e-e24903c2b07c" name="Plätze reservieren" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="423282d8-6125-40e9-bdf7-460471b05961" />
+        <subjects>
+          <subsystemMoniker Id="545a2e8d-49a2-44d3-8998-84ab6983ecfc" LastKnownName="Tischreservierung" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="88b624b5-48a1-4c63-acb9-c90c45710331" name="vorhandene Reservierungen einsehen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aa6ae177-7525-40ba-9215-8bb79e1d372c" />
+        <subjects>
+          <subsystemMoniker Id="545a2e8d-49a2-44d3-8998-84ab6983ecfc" LastKnownName="Tischreservierung" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="545a2e8d-49a2-44d3-8998-84ab6983ecfc" name="Tischreservierung" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0baf3482-819f-4d43-b811-eba5d3684caf" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="1a68d6bf-37f5-4cba-847f-ae193e84e07d" name="Reservierung Strornieren oder umändern" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f1e8b78e-c424-40d2-b113-7045e7067cc2" />
+        <subjects>
+          <subsystemMoniker Id="545a2e8d-49a2-44d3-8998-84ab6983ecfc" LastKnownName="Tischreservierung" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="172560ca-d7e5-41b7-97db-36cb3000268c" name="TischreservierungUseCase">
+    <elementDefinition Id="fe49d1ef-37ce-41ee-ad81-1672caa8f2f1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2558bcdb-0bf3-43dc-b255-7079076177f3">
+        <profileInstance Id="c2d9d1a3-81ef-401b-80e7-6e6e96e464c6" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c25746d0-eac5-4549-8e0d-2ca0f55bce8c">
+        <profileInstance Id="3ebe2194-d0c9-4562-86e8-6400ec79b652" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
