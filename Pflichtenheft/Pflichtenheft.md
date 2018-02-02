@@ -60,7 +60,7 @@ Den Benutzer ermöglichen, mit dem Browser Tische auszuwählen und diese zu rese
 
 Use Case Diagramm:
 
-![alt text](https://raw.githubusercontent.com/Velajuel121/Tischreservierung/Alen/TischreservierungUseCase/UseCase.PNG)
+![alt text](https://raw.githubusercontent.com/Velajuel121/Tischreservierung/Felix/TischreservierungUseCase/UseCase.PNG)
 
 6)Nicht-funktionale Anforderungen
 --------------------------
