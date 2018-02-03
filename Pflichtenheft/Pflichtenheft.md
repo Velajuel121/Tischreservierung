@@ -7,7 +7,7 @@ Projektleiter          |     Felix Kronsteiner
 
 Erstellt am            |     19.11.17         
 
-Letzte Änderung        |     01.12.17         
+Letzte Änderung        |     03.02.18         
 
 Zustand                |     In Arbeit        
 
@@ -33,30 +33,27 @@ Inhalt
 
 1)Ausgangssituation
 --------------------------
-  Dieses Projekt umfasst die Entwicklung einer Verwaltungssoftware für Platzreservierungen
-  eines Gastronomiebetriebs oder einer Veranstaltung. 
-  Die Software soll die Möglichkeit bieten, eine Webschnittstellte einzubinden,
-  sodass die Gäste online selbst ihren Tisch reservieren können und der Betrieb kann auch die Reservierungen einsehen.
+  Gerade wird noch bei dem Resteraunt die Reservierungen mit dem Telefon gemacht und diese werden mit dem Buch aufgeschrieben. 
 
 2)Ist Zustand
 --------------------------
- Nach der Ist Zustandserhebung haben wir festgestellt das der Betrieb gar keine Online-Schnitstelle zum Reservieren.
+ Nach der Ist Zustandserhebung haben wir festgestellt das der Betrieb gar keine Online-Schnitstelle zum Reservieren benutzt.
  
 2.1)Problemstellung
 --------------------------
- Durch den nicht Gebrauch von Online-Möglichkeiten verliert der Betrieb Kundschaft/bzw. Geld. Dadurch wird auch neue Kundschaft nicht gewonnen.
+ Durch den nicht Gebrauch von Online-Möglichkeiten verliert der Betrieb Kundschaft/bzw. Geld. Auch kann es zu Verwirrungen kommen, wenn zwei Leute den selben Namen haben.
  
 3)Zielsetzung
 --------------------------
-Das Ziel des Projekts ist es, für Restaurants ein komfortables System zu entwickeln das eine einfachere Tischreservierung ermöglicht.
+Das Ziel des Projekts ist es, für Restaurants ein komfortables System zu entwickeln das eine einfachere Tischreservierung ermöglicht die auch online genutzt werden kann.
 
 4)Projektendergebnis
 --------------------------
-Am Ende ist der User in der Lage sein die Tische online zu reservieren. Den Restaurants soll eine einfachere Anzeige für die Reservierung gegeben werden.
+Am Ende ist der User in der Lage sein die Tische online zu reservieren. Dem Restaurants soll eine einfachere Anzeige für die Reservierung gegeben werden und alle Reservierungen sollen online gespeichert werden.
 
 5)Funktionale Anforderung
 --------------------------
-Den Benutzer ermöglichen, mit dem Browser Tische auszuwählen und diese zu reservieren. Der User und das Restaurant können auch ihre Reservierungen anzeigen lassen.
+Den Benutzer ermöglichen, mit dem Browser Tische auszuwählen und diese zu reservieren. Der User und das Restaurant können auch ihre Reservierungen anzeigen lassen. Das Resteraunt kann alle Reservierungen ansehen und der Benutzer nur seine eigenen.
 
 Use Case Diagramm:
 
@@ -70,6 +67,6 @@ Use Case Diagramm:
 
 **Portabilität**: Kompatibel mit allen Browsern
 
-**Wertbarkeit**: das Programm kann in Zukunft erweitert werden indem man eine Desktop app erstellt
+**Wertbarkeit**: das Programm kann in Zukunft erweitert werden indem man eine Desktop app erstellen last.
 
 **Korrektheit**: Die Tischreservierung kann ohne Probleme benützt werden
