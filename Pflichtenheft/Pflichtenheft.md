@@ -49,7 +49,7 @@ Das Ziel des Projekts ist es, für Restaurants ein komfortables System zu entwic
 
 4)Projektendergebnis
 --------------------------
-Am Ende ist der User in der Lage sein die Tische online zu reservieren. Dem Restaurants soll eine einfachere Anzeige für die Reservierung gegeben werden und alle Reservierungen sollen online gespeichert werden.
+Am Ende ist der User in der Lage seine Tische online zu reservieren. Dem Restaurants soll eine einfachere Anzeige für die Reservierung gegeben werden und alle Reservierungen sollen online gespeichert werden.
 
 5)Funktionale Anforderung
 --------------------------
@@ -67,6 +67,6 @@ Use Case Diagramm:
 
 **Portabilität**: Kompatibel mit allen Browsern
 
-**Wertbarkeit**: das Programm kann in Zukunft erweitert werden indem man eine Desktop app erstellen last.
+**Wertbarkeit**: das Programm kann in Zukunft erweitert werden indem man eine Desktopapp erstellen lasst.
 
-**Korrektheit**: Die Tischreservierung kann ohne Probleme benützt werden
+**Korrektheit**: Die Tischreservierung kann ohne Probleme benutzt werden.
