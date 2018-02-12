@@ -1,0 +1,59 @@
+.dropbtn {
+    background-color: #8a4c1b;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #6a3a15;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d5742a;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 20px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+.show {
+    display: block;
+}
+
+body {
+    background-image: url("RestaurantView_Background.jpg");
+}
+
+.menucontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
+
