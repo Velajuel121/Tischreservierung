@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello World</title>
+    <title>Restaurant View</title>
+    <link rel="stylesheet" href="RestaurantView_Style.css" />
 </head>
 <body>
-
-    <h1>Restaurant View</h1>
-    <p>Super toll</p>
-
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Name des Benutzers</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a class="tablinks" onclick="openCity(event,'Reservierungen')">Reservierungen</a>
+            <a href="#about">About</a>
+            <a href="#contact">Kontakt </a>
+        </div>
+    </div>
+    <div id="Reservierungen" class="menucontent">
+        <h3>Meine Reservierungen</h3>
+        <p>Hier werden ihre Reservierungen aufgelistet:</p>
+    </div>
+    <script src="RestaurantView_JS.js"></script>
 </body>
 </html>
