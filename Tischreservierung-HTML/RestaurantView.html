@@ -5,17 +5,25 @@
     <link rel="stylesheet" href="RestaurantView_Style.css" />
 </head>
 <body>
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Name des Benutzers</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a class="tablinks" onclick="openCity(event,'Reservierungen')">Reservierungen</a>
-            <a href="#about">About</a>
-            <a href="#contact">Kontakt </a>
-        </div>
+    <div class="header">
+        <nav>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Name des Benutzers</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="#"class="tablinks" onclick="openCity(event,'Reservierungen')">Reservierungen</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Kontakt </a>
+                    <a href="file:///C:/Users/Felix/Desktop/Projekt%20Tischreservierung/Tischreservierung/Tischreservierung-HTML/LoginWindow.html">Logout</a>
+                </div>
+            </div>
+        </nav>
     </div>
-    <div id="Reservierungen" class="menucontent">
-        <h3>Meine Reservierungen</h3>
-        <p>Hier werden ihre Reservierungen aufgelistet:</p>
+    <div class="main">
+        <div id="Reservierungen" class="menucontent">
+            <h3>Meine Reservierungen</h3>
+            <p>Hier werden ihre Reservierungen aufgelistet:</p>
+        </div>
     </div>
     <script src="RestaurantView_JS.js"></script>
 </body>
