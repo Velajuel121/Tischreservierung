@@ -58,3 +58,13 @@ body {
     height: 300px;
 }
 
+.navbar{
+    position: fixed;
+
+}
+
+.content{
+    display: none;
+    padding: 100px 20px;
+    height:100%;
+}
