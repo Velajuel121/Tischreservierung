@@ -5,17 +5,32 @@
     <link rel="stylesheet" href="RestaurantView_Style.css" />
 </head>
 <body>
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Name des Benutzers</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a class="tablinks" onclick="openCity(event,'Reservierungen')">Reservierungen</a>
-            <a href="#about">About</a>
-            <a href="#contact">Kontakt </a>
+    <div class="navbar">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Name des Benutzers</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#Home" class="tablinks" onclick="openContent('Home',this)" id="default">Home</a>
+                <a href="#Reservierung"class="tablinks" onclick="openContent('Reservierungen',this)">Reservierungen</a>
+                <a href="#about" class="tablinks" onclick="openContent('About',this)">Über uns</a>
+                <a href="#contact" class="tablinks" onclick="openContent('Contact',this)">Kontakt</a>
+                <a href="LoginWindow.html">Logout</a>
+            </div>
         </div>
     </div>
-    <div id="Reservierungen" class="menucontent">
-        <h3>Meine Reservierungen</h3>
-        <p>Hier werden ihre Reservierungen aufgelistet:</p>
+    <div id="Home" class="content">
+        <h2>Willkommen im Verwaltungsbereich der Tischreservierung</h2>
+    </div>
+    <div id="Reservierungen" class="content">
+        <h3>Reservierungen:</h3>
+    </div>
+    <div id="About" class="content">
+        <h3>Die Tischreservierung wurde im zuge des SYP-Projekts im 3.Jahrgang\n von Alen Adzamija und Pero Djukic unter der leitung von Felix Kronsteiner erstellt:</h3>
+    </div>
+    <div id="Contact" class="content">
+        <h3>So können Sie uns erreichen:</h3>
+        <h4>Felix Kronsteiner --> Email: abc@gmx.at</h4>
+        <h4>Alen Adzamija --> Email: def@gmx.at</h4>
+        <h4>Pero Djukic --> Email: ghi@gmx.at</h4>
     </div>
     <script src="RestaurantView_JS.js"></script>
 </body>
