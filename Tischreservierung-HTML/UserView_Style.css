@@ -1,0 +1,25 @@
+.navbar{
+
+    color: white;
+    background-color:#8a4c1b;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    background-image: url("RestaurantView_Background.jpg");
+}
+li{
+    float: left;
+}
+li button {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float:right;
+}
