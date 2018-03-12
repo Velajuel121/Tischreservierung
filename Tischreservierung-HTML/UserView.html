@@ -1,1 +1,179 @@
-test UserView
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tischreservierung</title>
+        <link rel="stylesheet" href="UserView_Style.css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><h2>Tischreservierung</h2></li>
+                <li><button>Registrieren</button></li>
+                <li><button>Anmelden</button></li>
+            </ul>
+            
+        </div>
+        <p>
+            #include <stdio.h>
+                #include <stdlib.h>
+                    #include <unistd.h>
+                        #include <string.h>
+                            #include <sys/types.h>
+                            #include <sys/wait.h>
+                            #include <signal.h>
+                                #define MAX_ARGS 10
+                                #define MAX_COMMAND_LINE_LENGTH 1024
+                                #define MAX_COMMANDS_IN_LINE 10
+
+                                void INT_handler(int signal)
+                                {
+        <p>
+            }
+
+            //string will be equal to output[0] after function call
+            //output won't
+            //Return = splits.length; error output_length to small: -1
+            int string_split(char** output, int output_length, char *string, const char *seperator_string);
+
+            void execute_command_async(const char* command, char **args);
+
+            void remove_line_break_and_carrige_return(char* string);
+
+            int main(int argc, char *argv[])
+            {
+            char command_line[MAX_COMMAND_LINE_LENGTH];
+            char* commands[MAX_COMMANDS_IN_LINE];
+            struct sigaction act;
+            act.sa_handler = INT_handler;
+            sigaction(SIGINT, &act, 0);
+            do
+        <p>
+            {
+            printf("execute
+        <p>
+            : ");
+            fgets(command
+        <p>
+            _line, MAX_COMMAND_LINE_LENGTH, stdin);
+            remove_line_
+        <p>
+            break_and_carrige_return(command_line);
+            int commands
+<p>
+            _count = string_split(commands, MAX_COMMANDS_IN_LINE, command_line, " & ");
+            if (commands_count == -1)
+            fprintf(s
+<p>
+            tderr, "Too many commands!");
+            else
+            {
+            for (int i = 0; i < commands_count; i++)
+            {
+            char* a
+<p>
+            rgs[MAX_ARGS + 1];
+            int args_length = string_split(args, MAX_ARGS, commands[i], " ");
+            if (args_length == -1)
+            fprintf
+<p>
+            (stderr, "Too many arguments!");
+            args[args_length] = 0;
+            execute_comm
+<p>
+            and_async(args[0], args);
+            }
+            wait(0);
+            }
+        <p>
+            } while (strcmp(command_line, "exit") != 0);
+            }
+
+            //string will
+        <p>
+            be equal
+        <p>
+            to output[0] after function call
+            //output won
+<p>
+            't
+            //Return = splits.length; error output_length to small: -1
+            int string
+<p>
+            _split(char** output, int output_length, char *string, const char *seperator_string)
+            {
+            int i = 0;
+            char *t =
+<p>
+            string;
+            int seperator_string_length = strlen(seperator_string);
+            while (t != 0 && i < output_length)
+            {
+            output[i] = t;
+            t = strstr(
+        <p>
+            t,
+        <p>
+            seperator_string);
+            if (t != 0)
+            {
+            *t = '\0';
+            t += se
+<p>
+            perator_string_length;
+            }
+            i++;
+            }
+            if (
+<p>
+            t != 0)
+            return -1;
+            return i;
+            }
+
+            void exec
+        <p>
+            ute_command_async(const char* command, char **args)
+            {
+        <p>
+            pid_t c
+<p>
+            hildpid = fork();
+            if (c
+        <p>
+            hildpid == -1)
+            fprintf(stde
+        <p>
+            rr, "Cannot create new Process\n");
+            else
+        <p>
+            if (childpid == 0)
+            {
+            execvp(command, args);
+            prin
+        <p>
+            tf("Cannot execute \"%s\"\n", command);
+            exit(0);
+<p>
+            }
+            }
+
+            void remove_line_break_and_carrige_return(char* string)
+            {
+            int string_length = strlen(string);
+
+            if (string_length >= 2)
+            {
+            if (string[string_length - 2] == '\r' || string[string_length - 2] == '\n')
+            string[string_length - 2] = '\0';
+            else if (string[string_length - 1] == '\r' || string[string_length - 1] == '\n')
+            string[string_length - 1] = '\0';
+            }
+            else if (string_length == 1)
+            if (string[0] == '\r' || string[0] == '\n')
+            string[0] = '\0';
+        <p>
+            }
+
+        </p>
+    </body>
+</html>
