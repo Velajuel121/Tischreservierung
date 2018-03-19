@@ -26,9 +26,11 @@ Inhalt
 
 4) Projektendergebnis
 
-5) Funktionale Anforderung
+5) Klassendiagramm
 
-6) Nicht funktionale Anforderung
+6) Funktionale Anforderung
+
+7) Nicht funktionale Anforderung
 
 
 1)Ausgangssituation
@@ -51,7 +53,13 @@ Das Ziel des Projekts ist es, für Restaurants ein komfortables System zu entwic
 --------------------------
 Am Ende ist der User in der Lage seine Tische online zu reservieren. Dem Restaurants soll eine einfachere Anzeige für die Reservierung gegeben werden und alle Reservierungen sollen online gespeichert werden.
 
-5)Funktionale Anforderung
+5) Klassendiagramm
+--------------------------
+Klassendiagramm:
+
+![alt text](https://raw.githubusercontent.com/Velajuel121/Tischreservierung/Felix/TischreservierungUseCase/UseCase.PNG)
+
+6)Funktionale Anforderung
 --------------------------
 Den Benutzer ermöglichen, mit dem Browser Tische auszuwählen und diese zu reservieren. Der User und das Restaurant können auch ihre Reservierungen anzeigen lassen. Das Resteraunt kann alle Reservierungen ansehen und der Benutzer nur seine eigenen.
 
@@ -59,7 +67,7 @@ Use Case Diagramm:
 
 ![alt text](https://raw.githubusercontent.com/Velajuel121/Tischreservierung/Felix/TischreservierungUseCase/UseCase.PNG)
 
-6)Nicht-funktionale Anforderungen
+7)Nicht-funktionale Anforderungen
 --------------------------
 **Usability**: Benutzerfreundlich aufgrund einfacher Webapplikation
 
