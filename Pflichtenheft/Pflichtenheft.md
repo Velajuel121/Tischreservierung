@@ -53,7 +53,7 @@ Das Ziel des Projekts ist es, für Restaurants ein komfortables System zu entwic
 --------------------------
 Am Ende ist der User in der Lage seine Tische online zu reservieren. Dem Restaurants soll eine einfachere Anzeige für die Reservierung gegeben werden und alle Reservierungen sollen online gespeichert werden.
 
-5) Klassendiagramm
+5)Klassendiagramm
 --------------------------
 Klassendiagramm:
 
