@@ -57,7 +57,7 @@ Am Ende ist der User in der Lage seine Tische online zu reservieren. Dem Restaur
 --------------------------
 Klassendiagramm:
 
-![alt text](https://raw.githubusercontent.com/Velajuel121/Tischreservierung/Felix/TischreservierungUseCase/UseCase.PNG)
+![alt text](https://raw.githubusercontent.com/Velajuel121/Tischreservierung/master/IMG_1997.JPG)
 
 6)Funktionale Anforderung
 --------------------------
