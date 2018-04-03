@@ -2,7 +2,18 @@
 <html>
     <head>
         <title>Reservierungsformular</title>
+        <script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+        <script src="js/incrementing.js"></script>
         <link rel="stylesheet" href="ReservationPage_Style.css" />
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+          <script>
+          $( function() {
+            $( "#datepicker" ).datepicker();
+          } );
+          </script>
     </head>
     <body>
         <div class="header">
@@ -21,9 +32,12 @@
                     <input type="text" name="persons" id="persons" value="2"/>
                 </div>
                 <div class="date">
-                    <input type="date" name="date" placeholder="Datum auswählen" />
+                    <label>Datum: </label>
+                    <input type="text" id="datepicker" name="date" placeholder="Datum auswählen" style="width: auto" />
                 </div>
                 <div class="time">
+                    <label>Uhrzeit: </label>
+                </div>
                     <div class="btn-group">
                         <button class="button" name="12:00">12:00</button>
                         <button class="button" name="12:00">12:15</button>
@@ -47,9 +61,12 @@
                         <button class="button" name="12:00">16:45</button>
                         <button class="button" name="12:00">17:00</button>
                     </div>
+                
+                <div class="reservate">
+                    <button class="button" name="submit">Jetzt reservieren</button>
                 </div>
-            </div>
 
+            </div>
         </div>
 
 

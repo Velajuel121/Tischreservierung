@@ -25,19 +25,75 @@ body {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    float: center;
+    float: left;
     border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
-.btn-group .button:active {
+.btn-group .button:focus {
     background-color: red;
 }
 
 .btn-group .button:hover {
-    background-color: ##33cc33;
+    background-color: #33cc03;
+}
+.btn-group{
+    padding-top: 45px;
 }
 
 .formularData {
     padding-left: 170px;
     padding-right: 170px;
+    
+}
+
+input[type=text] {
+  float: left;
+  width: 40px;
+  font: bold 20px Helvetica, sans-serif;
+  padding: 3px 0 0 0;
+  text-align: center;
+}
+
+.persons{
+    overflow: hidden;
+    margin: 0 0 5px 0;
+}
+
+.persons .button {
+  margin: 0 0 0 5px;
+  text-indent: -9999px;
+  cursor: pointer;
+  width: 29px;
+  height: 29px;
+  float: left;
+  text-align: center;
+  background: buttons.png;
+}
+
+label {
+  font: bold 20px Helvetica, sans-serif;
+  display: block;
+  float: left;
+  text-align: left;
+  padding: 5px 10px 0 10px;
+  width: 140px;
+}
+.reservate {
+    margin-top: 150px;
+}
+.reservate .button{
+    background-color: #8a4c1b;
+    color: white;
+    border-radius: 15px;
+    font-size: 25px;
+    padding: 15px 32px;
+}
+.date{
+    margin-top: 25px;
+}
+
+.time{
+     margin-top: 75px;
 }
