@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8" />
         <title>Tischreservierung</title>
         <link rel="stylesheet" href="UserView_Style.css" />
     </head>
     <body>
+        <script src="RestaurantView_JS.js"></script>
         <ul>
-            <li><a>Tischreservierung</a></li>
+            <li><a>TiRe</a></li>
             <li style="float:right"><a href="#Registrieren">Registrieren</a></li>
             <li style="float:right"><a href="LoginWindow.html">Anmelden</a></li>
+            <li><a class="navbutton" href="#über" onclick="openContent('Über',this)" id="default">Über</a></li>
+            <li><a class="navbutton" href="#Speisekarte" onclick="openContent('Speisekarte',this)">Speisekarte</a></li>
+            <li><a class="navbutton" href="#Bewertungen" onclick="openContent('Bewertungen',this)">Bewertungen</a></li>
+            <li>
+                <div class="reserveButton">
+            <a class="button" href="ReservationPage.html">Jetzt reservieren</a>
+        </div>
+            </li>
         </ul>
-        <div class="menu">
+        <div id="Speisekarte" class="mainContent">
             <h2>Unser Menü heute</h2>
             <h3 style="font-size:150%">Vorspeise:</h3>
             <h3>Fridattensuppe</h3>
@@ -24,8 +34,13 @@
             <h3>Nutellapalatschinken</h3>
             
         </div>
-        <div class="reserveButton">
-            <a class="button" href="ReservationPage.html">Jetzt reservieren</a>
+        <div id="Über" class="mainContent">
+            <h2>Über "zum Testgasthaus"</h2>
+            <h3>Das Restaurant "zum Testgasthaus" bietet traditionelle Österreichische Kost in einer unglaublichen Atmosphäre...</h3>
         </div>
+        <div id="Bewertungen" class="mainContent">
+            <h2>In Arbeit</h2>
+        </div>
+        
     </body>
 </html>
