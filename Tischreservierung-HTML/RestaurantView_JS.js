@@ -18,7 +18,7 @@ window.onclick = function (event) {
 }
 
 function openContent(contentName, element) {
-    var i, content, tablinks;
+    var i, content;
     content = document.getElementsByClassName("content");
     for (i = 0; i < content.length; i++) {
         content[i].style.display = "none";

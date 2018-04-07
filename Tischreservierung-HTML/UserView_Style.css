@@ -1,14 +1,4 @@
-/*.navbar{
 
-    color: white;
-    background-color:#8a4c1b;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}*/
 body{
     background-image: url("RestaurantView_Background.jpg");
 }
@@ -47,7 +37,7 @@ h3 {
     text-align: center;
 }
 .button {
-    background-color: darkred;
+    background-color: darkgreen;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -63,6 +53,7 @@ h3 {
 }
 
 .mainContent{
+    padding-top: 10px;
     display: none;
     /*visibility: hidden;*/
 }

@@ -16,7 +16,7 @@ article{
     clear: left;
     text-align: center;
     font-size: 30px;
-   
+    color: white;
     margin-left: 750px;
     margin-right: 750px;
     margin-top: 25px;
@@ -31,3 +31,20 @@ label{
 	font-family: serif;
 }
 
+button{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-top: 15px;
+    padding: 15px 32px;
+}
+
+input{
+    font-size: 20px;
+    background-color: #8a4c1b;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    
+}
