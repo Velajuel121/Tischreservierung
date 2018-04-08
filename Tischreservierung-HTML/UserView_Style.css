@@ -28,10 +28,17 @@ h2 {
     color:white;
     padding-top: 35px;
     text-align:center;
+    font-size: 200%;
+    border-bottom-style: solid;
+    border-bottom-color: darkgreen;
+    margin-left: 800px;
+    margin-right: 800px
 }
+
 h3 {
     color: white;
     text-align: center;
+    font-size: 200%;
 }
 .reserveButton {
     text-align: center;

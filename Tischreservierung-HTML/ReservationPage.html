@@ -27,7 +27,10 @@
                 <h2>Hier k&ouml;nnte ihr Restaurant name stehen</h2>
             </div>
             <div class="formularData">
-            
+                <div class="name">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" style="width: auto"/><br/><br/><br/>
+                </div>
                 <div class="persons">
                     <label for="persons">Personen: </label>
                     <input type="text" name="persons" id="persons" value="2"/>
@@ -64,12 +67,13 @@
                     </div>
                 
                 <div class="reservate">
-                    <button class="button" name="submit">Jetzt reservieren</button>
+                    <button class="button" name="submit" onclick="toUserView()">Jetzt reservieren</button>
                 </div>
 
+                
             </div>
         </div>
-
+         <script src=RegistrationPage_JS.js ></script>
 
     </body>
 </html>

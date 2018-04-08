@@ -59,6 +59,7 @@ input[type=text] {
 .persons{
     overflow: hidden;
     margin: 0 0 5px 0;
+    
 }
 
 .persons .button {
