@@ -1,23 +1,55 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Reservierungsformular</title>
-        <script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-        <script src="js/incrementing.js"></script>
-        <link rel="stylesheet" href="ReservationPage_Style.css" />
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="/resources/demos/style.css">
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-          <script>
-          $( function() {
-            $( "#datepicker" ).datepicker();
-          } );
-          </script>
-    </head>
-    <body>
-	<form action="reservationadded.php" method="post">
+<?php
+
+if(isset($_POST['submit'])){
+	$data_missing = array();
+	
+	if(empty($_POST['name'])){
+		$data_missing[] = 'NAME';
+	} else {
+			$name = ($_POST['name']);
+	}
+	if(empty($_POST['persons'])){
+		$data_missing[] = 'PERSONS';
+	} else {
+			$persons = ($_POST['persons']);
+	}
+	if(empty($_POST['date'])){
+		$data_missing[] = 'DATE';
+	} else {
+			$date = ($_POST['date']);
+	}
+	if(empty($_POST['12:00'])){
+		$data_missing[] = 'TIME';
+	} else {
+			$time = ($_POST['12:00']);
+	}
+	if(empty($data_missing)){
+		require_once('mysqli_connect.php');
+
+		$query1 = "INSERT INTO reservation (idReservation,guestid,Time,countOfPersons) values (?,?,?,?)";
+		$stmt1 = mysqli_prepare($dbc, $query1);
+		mysqli_stmt_bind_param($stmt, "iisi", 1,1,$date,$persons);
+		mysqli_stmt_execute($stmt);
+		$affected_rows = mysqli_stmt_affected_rows($stmt);
+		if($affected_rows == 1){
+			echo 'Reservation went through';
+			mysqli_stmt_close($stmt);
+			mysqli_close($dbc);
+	} else {
+		echo 'Error Occured <br />':
+		echo mysqli_error();
+		mysqli_stmt_close($stmt);
+			mysqli_close($dbc);
+	}
+} else {
+	echo 'You need to enter the following data<br />';
+	foreach($data_missing as $missing){
+		echo "$missing<br />";
+	}
+}
+?>
+
+<form action="reservationadded.php" method="post">
         <div class="header">
             <h1>Schliesse deine Reservierung ab</h1>
 
@@ -74,5 +106,3 @@
         </div>
          <script src=RegistrationPage_JS.js ></script>
 	</form>
-    </body>
-</html>
