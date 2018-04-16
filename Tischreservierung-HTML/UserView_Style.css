@@ -62,5 +62,8 @@ h3 {
 .mainContent{
     padding-top: 10px;
     display: none;
+    background-color: #737373;
+    padding-left: 120px;
+    padding-right: 120px;
     /*visibility: hidden;*/
 }
