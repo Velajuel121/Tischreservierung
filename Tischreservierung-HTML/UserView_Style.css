@@ -1,6 +1,7 @@
 
 body{
-    background-image: url("RestaurantView_Background.jpg");
+    #background-image: url("RestaurantView_Background.jpg");
+    background-image: url("boden.jpg");
 }
 li {
     float: left;
@@ -18,17 +19,19 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #8a4c1b;
+    background-color: #000000;
+    color: white;
     width: 100%;
     position: fixed;
     top: 0;
     left:0;
 }
 h2 {
+    font-family: "Edwardian Script ITC",sans-serif;
+    font-size: 50px;
     color:white;
     padding-top: 35px;
     text-align:center;
-    font-size: 200%;
     border-bottom-style: solid;
     border-bottom-color: darkgreen;
     margin-left: 800px;
@@ -39,6 +42,7 @@ h3 {
     color: white;
     text-align: center;
     font-size: 200%;
+    font-family: "Castellar"
 }
 .reserveButton {
     text-align: center;
@@ -62,8 +66,11 @@ h3 {
 .mainContent{
     padding-top: 10px;
     display: none;
-    background-color: #737373;
-    padding-left: 120px;
-    padding-right: 120px;
+    #background-color: #737373;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
     /*visibility: hidden;*/
 }
