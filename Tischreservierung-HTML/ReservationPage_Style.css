@@ -1,5 +1,6 @@
 body {
-    background-image: url("RestaurantView_Background.jpg");
+    --background-image: url("RestaurantView_Background.jpg");
+    background-image: url("boden.jpg");
 }
 
 .format {
@@ -85,7 +86,7 @@ label {
     margin-top: 150px;
 }
 .reservate .button{
-    background-color: #8a4c1b;
+    background-color: #000000;
     color: white;
     border-radius: 15px;
     font-size: 25px;
@@ -98,3 +99,4 @@ label {
 .time{
      margin-top: 75px;
 }
+

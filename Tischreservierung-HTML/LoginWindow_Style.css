@@ -1,7 +1,7 @@
 header{
     padding: 1em;
     color: white;
-    background-color: #8a4c1b;
+    background-color: #000000;
     clear: left;
     text-align: center;
     font-size: 30px;
@@ -20,12 +20,13 @@ article{
     margin-left: 750px;
     margin-right: 750px;
     margin-top: 25px;
-	border-color: #8a4c1b;
+	border-color: #000000;
 	border-style: solid;
 	font-family: "Times New Roman", Times, serif;
 }
 body {
-    background-image: url("Login_Background.jpg");
+    --background-image: url("Login_Background.jpg");
+    background-image: url("boden.jpg");
 }
 label{
 	font-family: serif;
@@ -42,7 +43,7 @@ button{
 
 input{
     font-size: 20px;
-    background-color: #8a4c1b;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding-bottom: 5px;
