@@ -12,3 +12,7 @@ function openContent(contentName, element) {
 
 
 document.getElementById("default").click();
+
+function chooseNumbers(){
+    
+}

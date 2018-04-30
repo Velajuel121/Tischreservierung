@@ -6,20 +6,23 @@
         <link rel="stylesheet" href="UserView_Style.css" />
     </head>
     <body>
+        
         <script src="UserView_JS.js"></script>
-        <ul>
-            <li><a>TiRe</a></li>
-            <li style="float:right"><a href="RegistrationPage.html">Registrieren</a></li>
-            <li style="float:right"><a href="LoginWindow.html">Anmelden</a></li>
-            <li><a class="navbutton" href="#über" onclick="openContent('Über',this)" id="default">&Uuml;ber</a></li>
-            <li><a class="navbutton" href="#Speisekarte" onclick="openContent('Speisekarte',this)">Speisekarte</a></li>
-            <li><a class="navbutton" href="#Bewertungen" onclick="openContent('Bewertungen',this)">Bewertungen</a></li>
-            <li>
-                <div class="reserveButton">
-                    <a class="button" href="ReservationPage.html">Jetzt reservieren</a>
-                </div>
-            </li>
-        </ul>
+        <div class="navbar">
+            <ul>
+                <li><a>TiRe</a></li>
+                <li style="float:right"><a href="RegistrationPage.html">Registrieren</a></li>
+                <li style="float:right"><a href="LoginWindow.html">Anmelden</a></li>
+                <li><a class="navbutton" href="#über" onclick="openContent('Über',this)" id="default">&Uuml;ber</a></li>
+                <li><a class="navbutton" href="#Speisekarte" onclick="openContent('Speisekarte',this)">Speisekarte</a></li>
+                <li><a class="navbutton" href="#Bewertungen" onclick="openContent('Bewertungen',this)">Bewertungen</a></li>
+                <li>
+                    <div class="reserveButton">
+                        <a class="button" href="ReservationPage.html">Jetzt reservieren</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <div id="Speisekarte" class="mainContent">
             <h2>Unser Men&uuml; heute</h2>
             <h2>Vorspeise:</h2>
@@ -39,7 +42,25 @@
             <h3>Das Restaurant "zum Testgasthaus" bietet traditionelle &Ouml;sterreichische Kost in einer unglaublichen Atmosph&auml;re...</h3>
         </div>
         <div id="Bewertungen" class="mainContent">
-            <h2>In Arbeit</h2>
+            <div class="reviews">
+                <input type="text" name="headline" autofocus="autofocus" id="headline" placeholder="Überschrift" />
+                
+                <div class="stars">
+                    <label>Punktevergabe: </label>
+                    <input type="text" onclick="showNumbers()"/>
+                    <ul>
+                        <li><a class="stars" onclick="chooseNumbers(5)">5</a></li>
+                        <li><a class="stars" onclick="chooseNumbers(4)">4</a></li>
+                        <li><a class="stars" onclick="chooseNumbers(3)">3</a></li>
+                        <li><a class="stars" onclick="chooseNumbers(2)">2</a></li>
+                        <li><a class="stars" onclick="chooseNumbers(1)">1</a></li>
+                    </ul>
+                </div>
+                <br>
+                <textarea type="text" name="reviewText" id="reviewText" rows="4" cols="50" placeholder="Gib hier deine Bewertung ein"></textarea>
+                <br>
+                <button class="reviewButton" onclick="openContent('Über',this)">Jetzt Bewertung abgeben</button>
+            </div>
         </div>
         
     </body>
