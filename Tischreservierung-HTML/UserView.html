@@ -46,17 +46,17 @@
                 <input type="text" name="headline" autofocus="autofocus" id="headline" placeholder="Überschrift" />
                 
                 <div class="stars">
-                    <label>Punktevergabe: </label>
-                    <input type="text" onclick="showNumbers()"/>
                     <ul>
-                        <li><a class="stars" onclick="chooseNumbers(5)">5</a></li>
+                        <li><a class="stars" onclick="chooseNumbers(5)" >5</a></li>
                         <li><a class="stars" onclick="chooseNumbers(4)">4</a></li>
                         <li><a class="stars" onclick="chooseNumbers(3)">3</a></li>
                         <li><a class="stars" onclick="chooseNumbers(2)">2</a></li>
                         <li><a class="stars" onclick="chooseNumbers(1)">1</a></li>
                     </ul>
+                    <label>Punktevergabe: </label>
+                    <input type="text" onclick="showNumbers()"/>
+                    
                 </div>
-                <br>
                 <textarea type="text" name="reviewText" id="reviewText" rows="4" cols="50" placeholder="Gib hier deine Bewertung ein"></textarea>
                 <br>
                 <button class="reviewButton" onclick="openContent('Über',this)">Jetzt Bewertung abgeben</button>
