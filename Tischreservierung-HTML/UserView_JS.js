@@ -13,6 +13,64 @@ function openContent(contentName, element) {
 
 document.getElementById("default").click();
 
-function chooseNumbers(){
+function chooseNumbers(number){
+    for(i = 1; i < 6;i++){
+            btn = document.getElementById(i);
+            btn.style.backgroundColor = "black";
+        }
+    switch(number){
+            case 5:
+                document.getElementById(5).style.backgroundColor = "#33cc03";
+                break;
+            case 4:
+                document.getElementById(4).style.backgroundColor = "#cece03";
+                break;
+            case 3:
+                document.getElementById(3).style.backgroundColor = "#ce9b03";
+                break;
+            case 2:
+                document.getElementById(2).style.backgroundColor = "#ce6903";
+                break;
+            case 1:
+                document.getElementById(1).style.backgroundColor = "#ce0303";
+                break;
+            default:
+                break;
+            
+        }
+        
+}
+
+var alreadyClicked = false;
+function colorIt(number){
+    if(alreadyClicked == false){
+        
+
+        for(i = 1; i < 6;i++){
+            btn = document.getElementById(i);
+            btn.style.backgroundColor = "black";
+        }
+        switch(number){
+            case 5:
+                document.getElementById(5).style.backgroundColor = "#33cc03";
+                break;
+            case 4:
+                document.getElementById(4).style.backgroundColor = "#cece03";
+                break;
+            case 3:
+                document.getElementById(3).style.backgroundColor = "#ce9b03";
+                break;
+            case 2:
+                document.getElementById(2).style.backgroundColor = "#ce6903";
+                break;
+            case 1:
+                document.getElementById(1).style.backgroundColor = "#ce0303";
+                break;
+            default:
+                break;
+        }
+    }
     
 }
+    
+
