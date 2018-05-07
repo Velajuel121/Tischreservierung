@@ -45,18 +45,17 @@
             <div class="reviews">
                 <input type="text" name="headline" autofocus="autofocus" id="headline" placeholder="Überschrift" />
                 
-                <div class="stars">
+                <div class="btn-group">
                     <label>Punktevergabe: </label>
-                    <input type="text" onclick="showNumbers()"/>
-                    <ul>
-                        <li><a class="stars" onclick="chooseNumbers(5)">5</a></li>
-                        <li><a class="stars" onclick="chooseNumbers(4)">4</a></li>
-                        <li><a class="stars" onclick="chooseNumbers(3)">3</a></li>
-                        <li><a class="stars" onclick="chooseNumbers(2)">2</a></li>
-                        <li><a class="stars" onclick="chooseNumbers(1)">1</a></li>
-                    </ul>
+                    <button class="stars" onclick="chooseNumbers(5)" onmouseover="colorIt(5)" id="5">5</button>
+                    <button class="stars" onclick="chooseNumbers(4)" onmouseover="colorIt(4)" id="4">4</button>
+                    <button class="stars" onclick="chooseNumbers(3)" onmouseover="colorIt(3)" id="3">3</button>
+                    <button class="stars" onclick="chooseNumbers(2)" onmouseover="colorIt(2)" id="2">2</button>
+                    <button class="stars" onclick="chooseNumbers(1)" onmouseover="colorIt(1)" id="1">1</button>
+                    
+
+                    
                 </div>
-                <br>
                 <textarea type="text" name="reviewText" id="reviewText" rows="4" cols="50" placeholder="Gib hier deine Bewertung ein"></textarea>
                 <br>
                 <button class="reviewButton" onclick="openContent('Über',this)">Jetzt Bewertung abgeben</button>
