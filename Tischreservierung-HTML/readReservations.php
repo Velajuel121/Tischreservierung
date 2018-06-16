@@ -81,28 +81,11 @@
 			</div>
 		</div>
 	</section>
+    
     <section>
-        <center><h1>ihre Reservierungen einsehen</h1></center>
-        <form action="readReservations.php" method="post">
-        <div class="container">
-            <div class="row">
-				<div class="col-md-12">
-                    <div class="form-group row">
-                        <label for="input-fromDate" class="col-md-2 col-form-label-lg">Datum: </label>
-                        <div class="col-md-2">
-                            <input class="form-control" type="date" name="input-fromDate">
-                        </div>
-                        <div class="col-md-2">
-                            <center><button type="submit" class="btn btn-primary">Suchen</button></center>
-                        </div>
-				    </div>
-                </div>
-            </div>
-        </div>
-        </form>
+        <h1>TEST</h1>
     </section>
 
 
 
 </body>
-</html>
