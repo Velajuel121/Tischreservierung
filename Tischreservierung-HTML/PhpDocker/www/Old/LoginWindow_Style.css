@@ -1,0 +1,51 @@
+header{
+    padding: 1em;
+    color: white;
+    background-color: #000000;
+    clear: left;
+    text-align: center;
+    font-size: 30px;
+   
+    margin-left: 750px;
+    margin-right: 750px;
+    margin-top: 175px;
+	font-family: "Times New Roman", Times, serif;
+}
+article{
+	padding: 1em;
+    clear: left;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-left: 750px;
+    margin-right: 750px;
+    margin-top: 25px;
+	border-color: #000000;
+	border-style: solid;
+	font-family: "Times New Roman", Times, serif;
+}
+body {
+    --background-image: url("Login_Background.jpg");
+    background-image: url("boden.jpg");
+}
+label{
+	font-family: serif;
+}
+
+button{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-top: 15px;
+    padding: 15px 32px;
+}
+
+input{
+    font-size: 20px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    
+}

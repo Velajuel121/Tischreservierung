@@ -1,0 +1,124 @@
+
+body{
+    --background-image: url("RestaurantView_Background.jpg");
+    background-image: url("boden.jpg");
+}
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    font-size: large;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+}
+h2 {
+    font-family: "Edwardian Script ITC",sans-serif;
+    font-size: 50px;
+    color:white;
+    padding-top: 35px;
+    text-align:center;
+    border-bottom-style: solid;
+    border-bottom-color: darkgreen;
+    margin-left: 750px;
+    margin-right: 750px
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 200%;
+    font-family: "Castellar"
+}
+.reserveButton {
+    text-align: center;
+}
+.button {
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbutton{
+    
+}
+
+.mainContent{
+    padding-top: 10px;
+    display: none;
+    --background-color: #737373;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    /*visibility: hidden;*/
+}
+
+.reviews{
+    border-style: solid;
+    background-color: #333333;
+    
+}
+
+.reviews input{
+    width: 400px;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.reviews .btn-group button{
+
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+
+.reviews .btn-group label{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+textarea{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.reviews button {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 16px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+

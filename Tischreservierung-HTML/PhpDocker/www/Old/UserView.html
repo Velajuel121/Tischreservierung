@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tischreservierung</title>
+        <link rel="stylesheet" href="UserView_Style.css" />
+    </head>
+    <body>
+        
+        <script src="UserView_JS.js"></script>
+        <div class="navbar">
+            <ul>
+                <li><a>TiRe</a></li>
+                <li style="float:right"><a href="RegistrationPage.html">Registrieren</a></li>
+                <li style="float:right"><a href="LoginWindow.html">Anmelden</a></li>
+                <li><a class="navbutton" href="#�ber" onclick="openContent('�ber',this)" id="default">&Uuml;ber</a></li>
+                <li><a class="navbutton" href="#Speisekarte" onclick="openContent('Speisekarte',this)">Speisekarte</a></li>
+                <li><a class="navbutton" href="#Bewertungen" onclick="openContent('Bewertungen',this)">Bewertungen</a></li>
+                <li>
+                    <div class="reserveButton">
+                        <a class="button" href="ReservationPage.html">Jetzt reservieren</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="Speisekarte" class="mainContent">
+            <h2>Unser Men&uuml; heute</h2>
+            <h2>Vorspeise:</h2>
+            <h3>Fridattensuppe</h3>
+            <h3>Beef Tartare</h3>
+            <h2>Hauptgang:</h2>
+            <h3>Wiener Schnitzel</h3>
+            <h3>Gebratener Kabeljau</h3>
+            <h3>Vegetarische Lasagne</h3>
+            <h2>Nachspeise:</h2>
+            <h3>Marillenkn&ouml;del</h3>
+            <h3>Nutellapalatschinken</h3>
+            
+        </div>
+        <div id="�ber" class="mainContent">
+            <h2>&Uuml;ber "zum Testgasthaus"</h2>
+            <h3>Das Restaurant "zum Testgasthaus" bietet traditionelle &Ouml;sterreichische Kost in einer unglaublichen Atmosph&auml;re...</h3>
+        </div>
+        <div id="Bewertungen" class="mainContent">
+            <div class="reviews">
+                <input type="text" name="headline" autofocus="autofocus" id="headline" placeholder="�berschrift" />
+                
+                <div class="btn-group">
+                    <label>Punktevergabe: </label>
+                    <button class="stars" onclick="chooseNumbers(5)" onmouseover="colorIt(5)" id="5">5</button>
+                    <button class="stars" onclick="chooseNumbers(4)" onmouseover="colorIt(4)" id="4">4</button>
+                    <button class="stars" onclick="chooseNumbers(3)" onmouseover="colorIt(3)" id="3">3</button>
+                    <button class="stars" onclick="chooseNumbers(2)" onmouseover="colorIt(2)" id="2">2</button>
+                    <button class="stars" onclick="chooseNumbers(1)" onmouseover="colorIt(1)" id="1">1</button>
+                    
+
+                    
+                </div>
+                <textarea type="text" name="reviewText" id="reviewText" rows="4" cols="50" placeholder="Gib hier deine Bewertung ein"></textarea>
+                <br>
+                <button class="reviewButton" onclick="openContent('�ber',this)">Jetzt Bewertung abgeben</button>
+            </div>
+        </div>
+        
+    </body>
+</html>

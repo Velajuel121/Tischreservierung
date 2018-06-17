@@ -35,7 +35,7 @@
 </head>
 <body class="body-wrapper">
     
-	<!--          HEADER        -->
+	
 	<section>
 		<div class="container">
 			<div class="row">
@@ -82,11 +82,61 @@
 		</div>
 	</section>
     
-    
     <section>
-        <h1>TEST</h1>
-    </section>
+        <center><h1>ihre Reservierungen einsehen</h1></center>
+        <form action="readReservations.php" method="post">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-12">
+                    <div class="form-group row">
+                        <label for="input-fromDate" class="col-md-2 col-form-label-lg">Datum: </label>
+                        <div class="col-md-2">
+                            <input class="form-control" type="date" name="input-fromDate">
+                        </div>
+                        <div class="col-md-2">
+                            <center><button type="submit" class="btn btn-primary">Suchen</button></center>
+                        </div>
+				    </div>
+                </div>
+            </div>
+            <?php
+            
+                $servername = "192.168.99.100";
+                $username = "root";
+                $password = "passme";
+                $dbschema = "tischreservierung";
+                $conn = new mysqli($servername, $username, $password,$dbschema);
 
+                // Check connection
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error . "<br>");
+                } 
+            
+                $date = $_POST["input-fromDate"];
+                
+                $sql = "select name,Sitzplaetze,Uhrzeit from reservation where Datum = '".$date."'";
+                $result = $conn->query($sql);
+            
+                if($result->num_rows > 0){
+                    while($row = $result->fetch_assoc()){
+                        echo '<ul class="list-group" style="border-style: solid;">';
+                        echo '  <li class="list-group-item">Name: '.$row["name"].'</li>';
+                        echo '  <li class="list-group-item">Plätze anzahl: '.$row["Sitzplaetze"].'</li>';
+                        echo '  <li class="list-group-item">Uhrzeit: '.$row["Uhrzeit"].'</li>';
+                        echo '</ul>';
+                        echo '<br/>';
+                    }
+                }
+                else{
+                    echo 'Keine Reservierungen an diesem Tag vorhanden';
+                }
+                    
+                $conn->close();  
+                
+            ?>
+        </div>
+        </form>
+    </section>
 
 
 </body>
