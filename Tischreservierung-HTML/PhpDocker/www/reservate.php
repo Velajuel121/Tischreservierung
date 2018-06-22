@@ -109,8 +109,11 @@
             echo '<section>';
             echo '<div class="container">';
             echo '<center><h1>Vielen Dank für Ihre Reservierung</h1></center>';
+            echo '<center><h1>Es wurde Ihnen eine Email mit den Daten geschickt</h1></center>';
             echo '</div>';
             echo '</section>';
+            
+            
         } else {
             echo '<section>';
             echo '<div class="container">';
