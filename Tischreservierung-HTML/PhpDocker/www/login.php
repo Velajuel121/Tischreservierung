@@ -68,7 +68,7 @@
 									<a class="nav-link" href="rating.html">Bewertung</a>
 								</li>
                                 <li class="nav-item">
-									<a class="nav-link" href="#">Meine Reservierungen</a>
+									<a class="nav-link" href="myreservations.php">Meine Reservierungen</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="logout.php">Logout</a>
