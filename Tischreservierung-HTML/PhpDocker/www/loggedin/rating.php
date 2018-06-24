@@ -73,8 +73,7 @@
 							</ul>
 							<ul class="navbar-nav ml-auto mt-10">
 								<li class="nav-item">
-                                    
-									<a class="nav-link login-button" href="login.html">
+                                    <a class="nav-link login-button" href="login.html">
                                         <?php
                                         echo '<section>';
                                         echo '<div class="container">';

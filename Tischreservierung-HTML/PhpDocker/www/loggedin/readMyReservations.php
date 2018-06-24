@@ -125,7 +125,7 @@
                 } 
             
                 $date = $_POST["input-fromDate"];
-                $un = $_POST["form-username"];
+                $un = $_SESSION["un"];
                 $sql = "select name,Sitzplaetze,Uhrzeit from reservation where Datum = '".$date."' AND username = '".$un."'";
                 $result = $conn->query($sql);
             
