@@ -128,91 +128,29 @@
 			</div>
 		</div>
 	</section>
-    
-    <?php
-        $servername = "192.168.99.100";
-        $username = "root";
-        $password = "passme";
-        $dbschema = "tischreservierung";
-        $conn = new mysqli($servername, $username, $password,$dbschema);
-    
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-        
-        
-        $un = $_POST["form-username"];
-        $pw = $_POST["form-password"];
-        if(strcasecmp($un,"admin") == 0 && strcasecmp($pw,"root") == 0){
-            echo '<script language="javascript" type="text/javascript">';
-            echo 'document.location="http://192.168.99.100/adminpage.html";';
-            echo '</script>';
-            exit();
-        }
-        
-        $sql = "select * from guest where username = '".$un."' AND password = '".$pw."'";
-        $result = $conn->query($sql);
-
-        if ($result->num_rows > 0) {
-            echo '<section>';
-            echo '<div class="container">';
-            echo '<center><h1>Sie sind nun Angemeldet '. htmlspecialchars($_POST["form-username"]) .'</h1></center>';
-            echo '</div>';
-            echo '</section>';
-        } else {
-            echo '<section>';
-            echo '<div class="container">';
-            echo '<center><h1>Falsche Logindaten.</h1></center>';
-            echo '<center><h1>Bitte versuchen Sie es erneut!</h1></center>';
-            echo '</div>';
-            echo '</section>';
-        }
-        $conn->close();
-    
-    ?>
-
 	<!--===============================
 =            Hero Area            =
 ================================-->
-
-	<section class="hero-area bg-1 text-center overly">
-		<!-- Container Start -->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<!-- Header Contetnt -->
-					<div class="content-block">
-						<h1>Jetzt Reservieren...</h1>
-						<p>Holen Sie sich einen unserer begehrtesten Plätze</p>
-
-						<!--  Popular category falls noch mal in irgendeiner weise gebraucht wrid
-					<div class="short-popular-category-list text-center">
-						<h2>Popular Category</h2>
-						<ul class="list-inline">
-							<li class="list-inline-item">
-								<a href=""><i class="fa fa-bed"></i> Hotel</a></li>
-							<li class="list-inline-item">
-								<a href=""><i class="fa fa-grav"></i> Fitness</a>
-							</li>
-							<li class="list-inline-item">
-								<a href=""><i class="fa fa-car"></i> Cars</a>
-							</li>
-							<li class="list-inline-item">
-								<a href=""><i class="fa fa-cutlery"></i> Restaurants</a>
-							</li>
-							<li class="list-inline-item">
-								<a href=""><i class="fa fa-coffee"></i> Cafe</a>
-							</li>
-						</ul>
-					</div>
-					-->
-
+<a href="reservations.html">
+		<section class="hero-area bg-1 text-center overly">
+			<!-- Container Start -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- Header Contetnt -->
+						<div class="content-block">
+							<h1>Jetzt Reservieren...</h1>
+							<p>Holen Sie sich einen unserer begehrtesten Plätze</p>
+	
+							
+	
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- Container End -->
-	</section>
+			<!-- Container End -->
+		</section>
+	</a>
 
 	<!--===================================
 =            Client Slider            =
