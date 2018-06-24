@@ -100,7 +100,7 @@
                 </div>
             </div>
             <?php
-            
+                $un = $_SESSION['form-username'];
                 $servername = "192.168.99.100";
                 $username = "root";
                 $password = "passme";

@@ -1,3 +1,6 @@
+<?php
+  session_start();      
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -101,7 +104,6 @@
         
                                         $sql = "select * from guest where username = '".$un."' AND password = '".$pw."'";
                                         $result = $conn->query($sql);
-
                                         if ($result->num_rows > 0) {
                                             echo '<section>';
                                             echo '<div class="container">';
@@ -116,8 +118,9 @@
                                             echo '</div>';
                                             echo '</section>';
                                         }
+                                        $_SESSION['un'] = $un;
                                         $conn->close();
-     
+        
                                         ?>
                                     </a>
 								</li>
