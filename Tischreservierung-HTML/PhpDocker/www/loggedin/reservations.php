@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,11 +76,17 @@
 							</ul>
 							<ul class="navbar-nav ml-auto mt-10">
 								<li class="nav-item">
-									<a class="nav-link login-button" href="login.html">Login</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link add-button" href="registration.html">
-										<i class="fa fa-plus-circle"></i> Registrieren</a>
+                                    
+									<a class="nav-link login-button" href="login.html">
+                                        <?php
+                                        echo '<section>';
+                                        echo '<div class="container">';
+                                        echo '<center><h3>'. htmlspecialchars($_SESSION["un"]) .'</h3></center>';
+                                        echo '</div>';
+                                        echo '</section>';
+                                        $_SESSION['un'] = $_SESSION["un"];
+                                        ?>
+                                    </a>
 								</li>
 							</ul>
 						</div>

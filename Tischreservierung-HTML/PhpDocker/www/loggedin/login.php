@@ -59,16 +59,16 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav ml-auto main-nav ">
 								<li class="nav-item active">
-									<a class="nav-link" href="index.html">Home</a>
+									<a class="nav-link" href="login.php">Home</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="reservations.html">Reservierungen</a>
+									<a class="nav-link" href="reservations.php">Reservierungen</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="aboutus.html">Team</a>
+									<a class="nav-link" href="aboutus.php">Team</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="rating.html">Bewertung</a>
+									<a class="nav-link" href="rating.php">Bewertung</a>
 								</li>
                                 <li class="nav-item">
 									<a class="nav-link" href="myreservations.php">Meine Reservierungen</a>
@@ -82,45 +82,53 @@
                                     
 									<a class="nav-link login-button" href="login.html">
                                         <?php
-                                        $servername = "192.168.99.100";
-                                        $username = "root";
-                                        $password = "passme";
-                                        $dbschema = "tischreservierung";
-                                        $conn = new mysqli($servername, $username, $password,$dbschema);
+                                        if(empty($_SESSION["un"])){
+                                            $servername = "192.168.99.100";
+                                            $username = "root";
+                                            $password = "passme";
+                                            $dbschema = "tischreservierung";
+                                            $conn = new mysqli($servername, $username, $password,$dbschema);
     
-                                        if ($conn->connect_error) {
-                                            die("Connection failed: " . $conn->connect_error);
-                                        }
+                                            if ($conn->connect_error) {
+                                                die("Connection failed: " . $conn->connect_error);
+                                            }
         
+            
+                                            $un = $_POST["form-username"];
+                                            $pw = $_POST["form-password"];
+                                            if(strcasecmp($un,"admin") == 0 && strcasecmp($pw,"root") == 0){
+                                                echo '<script language="javascript" type="text/javascript">';
+                                                echo 'document.location="http://192.168.99.100/adminpage.html";';
+                                                echo '</script>';
+                                                exit();
+                                            }
         
-                                        $un = $_POST["form-username"];
-                                        $pw = $_POST["form-password"];
-                                        if(strcasecmp($un,"admin") == 0 && strcasecmp($pw,"root") == 0){
-                                            echo '<script language="javascript" type="text/javascript">';
-                                            echo 'document.location="http://192.168.99.100/adminpage.html";';
-                                            echo '</script>';
-                                            exit();
-                                        }
-        
-                                        $sql = "select * from guest where username = '".$un."' AND password = '".$pw."'";
-                                        $result = $conn->query($sql);
-                                        if ($result->num_rows > 0) {
-                                            echo '<section>';
-                                            echo '<div class="container">';
-                                            echo '<center><h3>'. htmlspecialchars($_POST["form-username"]) .'</h3></center>';
-                                            echo '</div>';
-                                            echo '</section>';
+                                            $sql = "select * from guest where username = '".$un."' AND password = '".$pw."'";
+                                            $result = $conn->query($sql);
+                                            if ($result->num_rows > 0) {
+                                                echo '<section>';
+                                                echo '<div class="container">';
+                                                echo '<center><h3>'. htmlspecialchars($_POST["form-username"]) .'</h3></center>';
+                                                echo '</div>';
+                                                echo '</section>';
+                                            } else {
+                                                echo '<section>';
+                                                echo '<div class="container">';
+                                                echo '<center><h1>Falsche Logindaten.</h1></center>';
+                                                echo '<center><h1>Bitte versuchen Sie es erneut!</h1></center>';
+                                                echo '</div>';
+                                                echo '</section>';
+                                            }
+                                            $_SESSION['un'] = $un;
+                                            $conn->close();
                                         } else {
                                             echo '<section>';
                                             echo '<div class="container">';
-                                            echo '<center><h1>Falsche Logindaten.</h1></center>';
-                                            echo '<center><h1>Bitte versuchen Sie es erneut!</h1></center>';
+                                            echo '<center><h3>'. htmlspecialchars($_SESSION["un"]) .'</h3></center>';
                                             echo '</div>';
                                             echo '</section>';
+                                            $_SESSION['un'] = $_SESSION["un"];
                                         }
-                                        $_SESSION['un'] = $un;
-                                        $conn->close();
-        
                                         ?>
                                     </a>
 								</li>

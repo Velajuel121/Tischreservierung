@@ -54,7 +54,7 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav ml-auto main-nav ">
 								<li class="nav-item active">
-									<a class="nav-link" href="index.html">Home</a>
+									<a class="nav-link" href="login.php">Home</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="reservations.html">Reservierungen</a>
@@ -82,6 +82,7 @@
                                         echo '<center><h3>'. htmlspecialchars($_SESSION["un"]) .'</h3></center>';
                                         echo '</div>';
                                         echo '</section>';
+                                        $_SESSION['un'] = $_SESSION["un"];
                                         ?>
                                     </a>
 								</li>

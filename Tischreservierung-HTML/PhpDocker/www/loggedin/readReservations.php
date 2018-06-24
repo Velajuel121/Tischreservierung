@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,7 +54,7 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav ml-auto main-nav ">
 								<li class="nav-item active">
-									<a class="nav-link" href="index.html">Home</a>
+									<a class="nav-link" href="login.php">Home</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="reservations.html">Reservierungen</a>
@@ -62,17 +65,26 @@
 								<li class="nav-item">
 									<a class="nav-link" href="rating.html">Bewertung</a>
 								</li>
+                                <li class="nav-item">
+									<a class="nav-link" href="myreservations.html">Meine Reservierungen</a>
+								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="logout.html">Logout</a>
+									<a class="nav-link" href="logout.php">Logout</a>
 								</li>
 							</ul>
 							<ul class="navbar-nav ml-auto mt-10">
 								<li class="nav-item">
-									<a class="nav-link login-button" href="login.html">Login</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link add-button" href="registration.html">
-										<i class="fa fa-plus-circle"></i> Registrieren</a>
+                                    
+									<a class="nav-link login-button" href="login.html">
+                                        <?php
+                                        echo '<section>';
+                                        echo '<div class="container">';
+                                        echo '<center><h3>'. htmlspecialchars($_SESSION["un"]) .'</h3></center>';
+                                        echo '</div>';
+                                        echo '</section>';
+                                        $_SESSION['un'] = $_SESSION["un"];
+                                        ?>
+                                    </a>
 								</li>
 							</ul>
 						</div>
