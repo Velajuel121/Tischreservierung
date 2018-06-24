@@ -87,8 +87,8 @@
             }
         
             echo '<center>';
-            echo '<button onclick="window.location.href=\'http://192.168.99.100/index.html\'" type="submit" class="btn btn-primary">Home</button>';
-            echo '<button style="margin-left: 25px" onclick="window.location.href=\'http://192.168.99.100/reservations.html\'" type="submit" class="btn btn-primary">Zurück zum Reservieren</button>';
+            echo '<button onclick="window.location.href=\'http://192.168.99.100/loggedin/login.php\'" type="submit" class="btn btn-primary">Home</button>';
+            echo '<button style="margin-left: 25px" onclick="window.location.href=\'http://192.168.99.100/loggedin/reservations.php\'" type="submit" class="btn btn-primary">Zurück zum Reservieren</button>';
             echo '</div>';
             echo '</center>';
         

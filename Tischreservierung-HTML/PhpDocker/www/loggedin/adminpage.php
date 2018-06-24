@@ -54,16 +54,16 @@
 									<a class="nav-link" href="login.php">Home</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="reservations.html">Reservierungen</a>
+									<a class="nav-link" href="reservations.php">Reservierungen</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="aboutus.html">Team</a>
+									<a class="nav-link" href="aboutus.php">Team</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="rating.html">Bewertung</a>
+									<a class="nav-link" href="rating.php">Bewertung</a>
 								</li>
                                 <li class="nav-item">
-									<a class="nav-link" href="myreservations.html">Meine Reservierungen</a>
+									<a class="nav-link" href="myreservations.php">Meine Reservierungen</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="logout.php">Logout</a>
