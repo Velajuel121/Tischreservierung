@@ -71,16 +71,55 @@
 									<a class="nav-link" href="#">Meine Reservierungen</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="logout.html">Logout</a>
+									<a class="nav-link" href="logout.php">Logout</a>
 								</li>
 							</ul>
 							<ul class="navbar-nav ml-auto mt-10">
 								<li class="nav-item">
-									<a class="nav-link login-button" href="login.html">"'. htmlspecialchars($_POST["form-username"]) .'"</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link add-button" href="registration.html">
-										<i class="fa fa-plus-circle"></i> Registrieren</a>
+                                    
+									<a class="nav-link login-button" href="login.html">
+                                        <?php
+                                        $servername = "192.168.99.100";
+                                        $username = "root";
+                                        $password = "passme";
+                                        $dbschema = "tischreservierung";
+                                        $conn = new mysqli($servername, $username, $password,$dbschema);
+    
+                                        if ($conn->connect_error) {
+                                            die("Connection failed: " . $conn->connect_error);
+                                        }
+        
+        
+                                        $un = $_POST["form-username"];
+                                        $pw = $_POST["form-password"];
+                                        if(strcasecmp($un,"admin") == 0 && strcasecmp($pw,"root") == 0){
+                                            echo '<script language="javascript" type="text/javascript">';
+                                            echo 'document.location="http://192.168.99.100/adminpage.html";';
+                                            echo '</script>';
+                                            exit();
+                                        }
+        
+                                        $sql = "select * from guest where username = '".$un."' AND password = '".$pw."'";
+                                        $result = $conn->query($sql);
+
+                                        if ($result->num_rows > 0) {
+                                            echo '<section>';
+                                            echo '<div class="container">';
+                                            echo '<center><h3>'. htmlspecialchars($_POST["form-username"]) .'</h3></center>';
+                                            echo '</div>';
+                                            echo '</section>';
+                                        } else {
+                                            echo '<section>';
+                                            echo '<div class="container">';
+                                            echo '<center><h1>Falsche Logindaten.</h1></center>';
+                                            echo '<center><h1>Bitte versuchen Sie es erneut!</h1></center>';
+                                            echo '</div>';
+                                            echo '</section>';
+                                        }
+                                        $conn->close();
+     
+                                        ?>
+                                    </a>
 								</li>
 							</ul>
 						</div>
