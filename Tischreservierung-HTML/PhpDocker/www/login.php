@@ -67,13 +67,16 @@
 								<li class="nav-item">
 									<a class="nav-link" href="rating.html">Bewertung</a>
 								</li>
+                                <li class="nav-item">
+									<a class="nav-link" href="#">Meine Reservierungen</a>
+								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="logout.html">Logout</a>
 								</li>
 							</ul>
 							<ul class="navbar-nav ml-auto mt-10">
 								<li class="nav-item">
-									<a class="nav-link login-button" href="login.html">Login</a>
+									<a class="nav-link login-button" href="login.html">"'. htmlspecialchars($_POST["form-username"]) .'"</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link add-button" href="registration.html">
@@ -114,7 +117,7 @@
         if ($result->num_rows > 0) {
             echo '<section>';
             echo '<div class="container">';
-            echo '<center><h1>Sie sind nun Angemeldet</h1></center>';
+            echo '<center><h1>Sie sind nun Angemeldet '. htmlspecialchars($_POST["form-username"]) .'</h1></center>';
             echo '</div>';
             echo '</section>';
         } else {
