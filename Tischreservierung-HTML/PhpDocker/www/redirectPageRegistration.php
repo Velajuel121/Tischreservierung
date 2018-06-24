@@ -98,7 +98,17 @@
         ?>
     </div>
     
-    
+    <!--<div class="container">
+        <div class="form">
+          <h1>Thanks for stopping by</h1>
+              
+          <p><?= 'You have been logged out!'; ?></p>
+          
+          <a href="index.html"><button class="button button-block"/>Home</button></a>
+
+        </div>
+    </div>
+    -->
     
 	<!-- JAVASCRIPTS -->
 	<script src="plugins/jquery/jquery.min.js"></script>
